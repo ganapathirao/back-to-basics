@@ -1,0 +1,294 @@
+body{
+	   padding-top:20px;  
+}
+
+.custom-navbar{
+	border-bottom : 1px solid #000000;
+		nav{
+			background : transparent;
+			border     : none;
+			   & .navbar-form{
+			  	    border        : none;
+			  	    padding-right : 0px;
+			   }
+			   & li a:hover{
+			         color  : red !important;
+			   }
+		}
+		.form-control{
+			border-radius    : 10px;
+			background-color : black;
+		}
+		.back-to-basics{
+			font-size   : 28px;
+			color       : black;
+			font-weight : normal;
+		}
+		.first-letter{
+			font-size : 43px;
+		} 
+		small{
+			display    : block;
+			font-size  : 16px;
+			margin-top : 5px; 
+		}
+		.social-media{
+			background-color : black;
+			width            : 40px;
+			height           : 40px;
+			padding-top      : 11px;
+		}
+		.fa{
+			font-size       : 10px;
+			text-align      : center;
+			color           : white;
+			font-size       : 17px;
+			background-color: black;
+			border-radius   : 50%; 
+			&:hover{
+			    opacity          : 0.7;
+			    background-color : rgb(213,67,70);
+			    cursor           : pointer;
+		    }
+			ul i:last-child{
+				margin-right : 20px;
+			}
+			}
+			.nav-links{
+				margin-top : 25px;
+				margin-bottom : 10px;
+			}
+		 
+		.navbar-brand{
+			padding-left : 0px;
+		}
+		#navbar{
+			padding-left : 0px;
+		}
+		@media (max-width:767px){
+		.nav-links{
+			text-align : center;
+		}
+		nav{
+			margin-bottom : 0px;
+		}
+		.navbar-form{
+	  	   margin-bottom  : 0px;
+	  	   margin-top:20px;
+	  	   padding-bottom : 0px;
+		   }
+		}
+	}
+
+.active a{
+		color        : red !important;
+		background   : transparent !important;
+		padding-left : 0px !important;
+	} 
+	
+.btn{
+	 border-radius    : 10px;
+	 background-color : rgb(213,67,70);
+	 color            : white;	 
+	 &.active.focus,
+			&.active:focus,
+			&.focus,
+			&:active.focus,
+			&:active:focus,
+			&:focus {
+		       outline : none;
+			}
+	}
+
+.carousel{
+		background-color:gray;
+		margin-top:70px;
+}
+img{
+	width:100%;
+}
+.carousel-indicators{
+		  left: auto;
+         right: 20px;
+         width: 100%;
+    text-align: right;
+}
+
+.carousel-caption{
+			 position:absolute;
+			   bottom:10px;
+			font-size:17px;
+			     left:20px;
+			    width:350px;
+	 background-color: #000000;
+			  opacity: 0.7;
+}
+
+.your-title-here{
+		  margin-top:35px;
+		  margin-bottom:35px;
+		  border-bottom:1px solid black;
+			   & p{
+			   		font-size:16px;
+			   }
+			   & div{
+			   margin-bottom:40px;
+			   }
+}
+
+.thumbnail{
+		width:80px;
+		height:80px;
+		background-color:gray;
+		outline: 1px gray solid;
+		margin-right:13px;
+		outline-offset:5px;
+				& p{
+					color:white;
+					text-align:center;
+					margin-top:20px;
+				}
+}
+
+.large p{
+	margin-top:45px;
+	font-size:25px !important;
+
+	}
+
+.media-image{
+	margin-top:30px;
+		  & .media-heading{
+		  			color:red;
+		    }
+}
+.large{
+	width:225px;
+	height:145px;
+	float:left;
+	}
+
+a .large{
+	float: left;
+	margin-bottom:0px;
+}
+.content{
+	float:left;
+}
+.media-body p{
+	font-size:17px;
+	}
+
+.media-image p{
+	font-size:17px;
+}
+
+
+
+.latest-testimonal{
+	margin-top:80px;
+		& p:last-child{
+				font-size:16px;
+		}
+}
+
+h5 a{
+	color:red;
+	&:hover{
+	text-decoration:none;
+	color:red;
+	}
+ }
+
+
+
+@media (max-width:991px){
+	.carousel-caption{
+			padding-top:5px;
+			padding-bottom:0px;
+			font-size:13px;
+			left:0px
+		}
+	.menu li {
+		display:inline;
+		& a{
+		  display:inline;
+		}
+	}
+
+.fa {
+	  font-size: 10px;
+	  text-align:center;
+	  color:white;
+	  font-size:14px;
+	  background-color:black;
+}
+
+.fa:hover {
+    	opacity: 0.7;
+    }
+
+.social{
+		margin-right:7px;
+		  width:35px;
+		  display:inline;
+  	}
+} 
+@media (max-width:767px){
+	body{
+		padding-top:0px;
+	}
+	.active a{
+		padding-left:15px !important;
+	}
+	.navbar-form{
+		text-align:center;
+		margin-right:0px;
+	}
+}
+
+@media (max-width:425px){
+	 .nav-links{
+		margin-top:0px !important;
+		margin-bottom : 0px !important;
+	}
+	.carousel{
+		background-color:gray;
+		margin-top:20px;
+	}
+.carousel-caption{
+		font-size:10px;
+		left:0px;
+		padding-bottom:0px;		
+	}
+}
+
+@media (max-width:320px){
+	.back-to-basics{
+				font-size : 10px;
+		}
+	.carousel-caption{
+	font-size:10px;
+	left:0px;
+	padding-bottom:0px;
+	}
+	.your-title-here p{
+			   	font-size:14px;
+			   }
+	.large p{
+		font-size:15px !important;
+	}
+	.media-body p{
+		font-size:15px;
+	}
+	.media-image p{
+		font-size:15px;
+	}
+	.latest-testimonal p:last-child{
+		font-size:14px;
+	}
+	.nav-links{
+		margin-top:0px;
+		margin-bottom:0px;
+	}
+}
